@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advocate Abdul Mogni</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background: #c9a34e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang-btn {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.left img {
+    width: 80%;
+    border-radius: 10px;
+    border: 5px solid #c9a34e;
+}
+
+.right {
+    flex: 2;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.call-btn { background: blue; }
+.whatsapp-btn { background: #25D366; }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <button class="lang-btn" onclick="toggleLanguage()">हिंदी</button>
+    <h1 id="name">Advocate Abdul Mogni</h1>
+    <p id="degree">LL.B., MBA (UKAS)</p>
+    <h id="name">High Court of Patna, District Bar Association, District and session court, Madhubani</p>
+</header>
+
+<nav>
+    <a href="#about" id="navAbout">About Advocate</a>
+    <a href="#services" id="navServices">Services</a>
+    <a href="#contact" id="navContact">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="left">
+    <img src="profile.jpg" alt="Advocate Abdul Mogni">
+</div>
+
+<div class="right">
+
+<div class="card">
+<h2 id="aboutTitle">
+ About Him</h2>
+<p id="aboutText">
+Advocate Abdul Mogni is a professional lawyer practicing at Civil Court Madhubani.
+He provides expert legal services in civil, criminal, and family disputes. Advocate Abdul Mogni is a trusted legal professional practicing at Civil Court Madhubani, specializing in civil, criminal, and family dispute cases. With a commitment to honesty, professionalism, and client satisfaction, he provides effective legal solutions tailored to individual needs.
+</p>
+</div>
+
+<div class="card">
+<h2 id="serviceTitle">Legal Services</h2>
+<ul id="serviceList">
+<li>Civil Cases:- (property, title case, partition case, contracts, disputes, claim cases)</li>
+<li>Criminal Cases:- (bail, defense, FIR matters)</li>
+<li>Family Disputes:- (divorce, maintenance, custody)</li>
+<li>Legal Consultation:- (advice & guidance)</li>
+<li>Documentation & Drafting (agreements, notices)</li>
+<li>Court Representation</li>
+<li>Property & Land Matters</li>
+<li>Affidavits & Notary Work</li>
+</ul>
+</div>
+
+<div class="card">
+<h2 id="contactTitle">Contact Details</h2>
+
+<p><strong id="mobileLabel">Mobile:</strong> 6200717463</p>
+
+<a class="btn call-btn" href="tel:6200717463" id="callBtn">Call Now</a>
+<a class="btn whatsapp-btn" href="https://wa.me/916200717463">WhatsApp</a>
+
+<p><strong>Email:</strong><br>
+<a href="mailto:abdul.adv.mbi@gmail.com">abdul.adv.mbi@gmail.com</a></p>
+
+<p id="address1"><strong>Office at Bar Association Madhubani civil court:</strong><br>
+First Floor, Mahila Chamber,<br>
+Madhubani District Bar Association
+</p>
+<p id="address2"><strong>Office 1:</strong><br>
+Rasool Colony, Mahasethi pokhar ke paas, Sadar Hospital road,<br>
+ Madhubani, Bihar - 847212
+</p>
+<p id="address2"><strong>Office 2:</strong><br>
+Haripur Quazi Tola, Near Jama Masjid,<br>
+NH57, Madhubani, Bihar - 847229
+</p>
+<p id="address3"><strong>Office 3:</strong><br>
+Wakalatkhana, SDO court Jaynagar,<br>
+
+</p>
+</div>
+
+</div>
+</div>
+
+<footer>
+<p id="footerText">© 2026 Advocate Abdul Mogni | All Rights Reserved</p>
+</footer>
+
+<script>
+let isHindi = false;
+
+function toggleLanguage() {
+    isHindi = !isHindi;
+
+    if (isHindi) {
+        document.querySelector(".lang-btn").innerText = "English";
+
+        document.getElementById("navAbout").innerText = "हमारे बारे में";
+        document.getElementById("navServices").innerText = "सेवाएं";
+        document.getElementById("navContact").innerText = "संपर्क";
+
+        document.getElementById("aboutTitle").innerText = "हमारे बारे में";
+        document.getElementById("aboutText").innerText =
+        "एडवोकेट अब्दुल मोगनी सिविल कोर्ट मधुबनी में प्रैक्टिस करते हैं और सिविल, क्रिमिनल एवं पारिवारिक मामलों में विशेषज्ञ हैं। एडवोकेट अब्दुल मोगनी सिविल कोर्ट मधुबनी में प्रैक्टिस करने वाले एक विश्वसनीय विधि विशेषज्ञ हैं, जो सिविल, क्रिमिनल और पारिवारिक विवाद मामलों में विशेषज्ञता रखते हैं। ईमानदारी, पेशेवराना दृष्टिकोण और क्लाइंट संतुष्टि के प्रति प्रतिबद्धता के साथ, वे प्रत्येक व्यक्ति की आवश्यकता के अनुसार प्रभावी कानूनी समाधान प्रदान करते हैं।";
+
+        document.getElementById("serviceTitle").innerText = "कानूनी सेवाएं";
+        document.getElementById("serviceList").innerHTML =
+        "<li>सिविल मामले (संपत्ति, टाइटल केस, बंटवारा केस, अनुबंध, विवाद, दावा मामले)</li><li>आपराधिक मामले (जमानत, बचाव, FIR से संबंधित मामले)</li><li>पारिवारिक विवाद (तलाक, भरण-पोषण, अभिरक्षा)</li><li>कानूनी परामर्श (सलाह एवं मार्गदर्शन)</li><li>दस्तावेज़ एवं ड्राफ्टिंग (एग्रीमेंट, नोटिस)</li><li>न्यायालय में प्रतिनिधित्व</li><li>संपत्ति एवं भूमि संबंधी मामले</li><li>हलफनामा एवं नोटरी कार्य</li>";
+
+        document.getElementById("contactTitle").innerText = "संपर्क विवरण";
+        document.getElementById("mobileLabel").innerText = "मोबाइल:";
+        document.getElementById("callBtn").innerText = "कॉल करें";
+
+        document.getElementById("footerText").innerText =
+        "© 2026 एडवोकेट अब्दुल मोगनी | सर्वाधिकार सुरक्षित";
+    } else {
+        location.reload();
+    }
+}
+</script>
+
+</body>
+</html>
